@@ -6,6 +6,9 @@
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
+  position: relative;
+  z-index: 2; // Higher than container
+  pointer-events: auto;
 }
 
 .masthead-title {
