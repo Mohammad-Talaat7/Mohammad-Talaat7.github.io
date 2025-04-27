@@ -8,7 +8,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   background-color: var(--body-bg);
   pointer-events: auto;
 }
@@ -20,9 +20,18 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   
+  /* Re-enable pointer events ONLY for interactive elements */
+.container a,
+.container button,
+.container .button,
+.container input,
+.container .nav__link {
+  pointer-events: auto;
+}
+
   > * {
     pointer-events: auto;
   }
