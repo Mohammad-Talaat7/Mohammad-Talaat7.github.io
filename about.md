@@ -24,6 +24,6 @@ title: About
   </div>
 </section>
 
-![GitHub Contributions](https://ghchart.rshah.org/Mohammad-Talaat7)
+![GitHub Contributions](https://ghchart.rshah.org/Mohammad-Talaat7?bg=1a1b27&c=4a4e69&f=9a8c98&t=ffffff)
 
 [Download CV](/assets/pdfs/cv.pdf)
