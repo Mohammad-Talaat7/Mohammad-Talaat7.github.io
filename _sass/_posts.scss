@@ -74,11 +74,44 @@
   transform: translateY(-5px);
 }
 
-.skill__icon {
-  transition: transform 0.3s;
+/* Horizontal layout styles */
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* or 'flex-start' if you prefer left-aligned */
 }
+
+.skill__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Your existing hover animation */
+.skill__icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    transition: transform 0.3s;
+}
+
 .skill__item:hover .skill__icon {
-  transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+/* Optional enhancements */
+.skill__item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.skill__name {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .contrib-graph {
