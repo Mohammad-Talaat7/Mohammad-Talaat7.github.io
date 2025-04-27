@@ -1,17 +1,23 @@
 ---
 layout: page
-title: AI/ML Research Portfolio
-subtitle: Mohammad Talaat - Machine Learning Researcher
+title: Turning ideas into functional code.
+subtitle: Mohammad Talaat
 ---
 
 <div class="particles-js"></div> <!-- Particles.js background -->
 
-## Featured Projects
-{% for project in site.projects limit:3 %}
-- [{{ project.title }}]({{ project.url }})
-{% endfor %}
-
-[View All Projects](/archive)
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    {% for project in site.projects %}
+      <div class="project-card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <a href="{{ project.url }}">Read More</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 
 ## Recent Publications
 {% for pub in site.publications limit:3 %}

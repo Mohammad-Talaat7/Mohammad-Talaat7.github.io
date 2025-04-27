@@ -13,7 +13,17 @@ title: About
 - MSc in Computer Science, University Y (202X)
 
 ## Skills
-**Technical:** Python, TensorFlow/PyTorch, Scikit-learn, NLP, Computer Vision  
-**Research:** Experimental Design, Statistical Analysis, Academic Writing
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <div class="skills__container grid">
+    <div class="skill__item">
+      <i class="fab fa-react skill__icon"></i>
+      <span class="skill__name">React</span>
+    </div>
+    <!-- Repeat for other skills -->
+  </div>
+</section>
+
+![GitHub Contributions](https://ghchart.rshah.org/Mohammad-Talaat7)
 
 [Download CV](/assets/pdfs/cv.pdf)

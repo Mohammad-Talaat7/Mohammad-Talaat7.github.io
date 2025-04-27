@@ -65,3 +65,18 @@
     }
   }
 }
+
+.project__card {
+  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.project__card:hover {
+  transform: translateY(-5px);
+}
+
+.skill__icon {
+  transition: transform 0.3s;
+}
+.skill__item:hover .skill__icon {
+  transform: rotate(15deg);
+}
