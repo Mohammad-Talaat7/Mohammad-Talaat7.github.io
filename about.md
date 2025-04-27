@@ -9,17 +9,34 @@ title: About
 - Computer Vision
 
 ## Education
-- PhD in Machine Learning, University X (202X)
-- MSc in Computer Science, University Y (202X)
+- Bachelor in Computer Science, El-Shrouk Academy (2023)
 
 ## Skills
 <section class="skills section" id="skills">
   <h2 class="section__title">Skills</h2>
   <div class="skills__container grid">
     <div class="skill__item">
-      <i class="fab fa-react skill__icon"></i>
-      <span class="skill__name">React</span>
+      <i class="fab fa-python skill__icon"></i>
+      <span class="skill__name">Python</span>
     </div>
+    <div class="skill__item">
+      <i class="fab fa-git-alt skill__icon"></i>
+      <span class="skill__name">Git</span>
+    </div>
+    <div class="skill__item">
+      <i class="fas fa-microchip skill__icon"></i>
+      <span class="skill__name">CUDA</span>
+    </div>
+    <div class="skill__item">
+      <i class="fab fa-linux skill__icon"></i>
+      <span class="skill__name">Linux</span>
+    </div>
+    <div class="skill__item">
+      <i class="fas fa-database skill__icon"></i>
+      <span class="skill__name">SQL</span>
+    </div>
+
+
     <!-- Repeat for other skills -->
   </div>
 </section>
