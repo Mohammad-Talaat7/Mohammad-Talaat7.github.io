@@ -1,6 +1,7 @@
 # Setup
-title: Dark Poole
-url: https://getpoole.com
+title: Mohammad Talaat - AI/ML Researcher
+description: Research portfolio showcasing machine learning projects and publications
+url: https://mohammad-talaat7.github.io/
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -32,12 +33,34 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Mohammad Talaat
+  url: linkedin.com/in/mohamed-talaat7/
+  email: mohamed.talaat.ismael@gmail.com
 
 # Custom vars
 version: 3.0.0
+
+# Collections for projects and publications
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "post"
 
 # Navbar page list
 nav:
