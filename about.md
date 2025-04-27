@@ -24,6 +24,6 @@ title: About
   </div>
 </section>
 
-[![GitHub Contributions](https://github-contributions.vercel.app/api/v2/Mohammad-Talaat7?no-frame=true&theme=dark&title_color=ffffff&text_color=8b949e&bg_color=0d1117)](https://github.com/Mohammad-Talaat7)
+![GitHub Contributions](https://github-contributions.vercel.app/api/v2/Mohammad-Talaat7?no-frame=true&theme=dark&title_color=ffffff&text_color=8b949e&bg_color=0d1117)
 
 [Download CV](/assets/pdfs/cv.pdf)
