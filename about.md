@@ -27,10 +27,11 @@ title: About
 
 
 <div class="contrib-graph">
-  <img 
-    src="https://github-contributions.vercel.app/api/v2/Mohammad-Talaat7?no-frame=true&theme=dark&title_color=ffffff&text_color=8b949e&bg_color=0d1117&s0=161b22&s1=0e4429&s2=006d32&s3=26a641&s4=39d353" 
-    alt="GitHub Contributions Graph"
-  >
+    <img 
+        src="https://ghchart.rshah.org/Mohammad-Talaat7" 
+        alt="GitHub Contributions Graph"
+        style="width: 100%; max-width: 900px; filter: invert(1) hue-rotate(180deg);"
+    >
 </div>
 
 [Download CV](/assets/pdfs/cv.pdf)
