@@ -154,6 +154,7 @@
 }
 
 .certificate-footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,7 +176,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 0.3rem;
+  padding: 0 0.5rem;
   margin-left: auto; /* Push to right side */
   
   i {
@@ -268,6 +269,8 @@
   position: relative;
   font-size: 0.85rem;
   max-width: 80%;
+  flex: 1;
+  padding-right: 1rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
