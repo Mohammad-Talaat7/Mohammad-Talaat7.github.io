@@ -1,18 +1,19 @@
 ---
-title: "Advanced Transformer Architectures for NLP"
-date: 2025-04-27
-venue: "Journal of Machine Learning"
-authors: "Your Name, Co-Author"
-pdf: /assets/pdfs/transformer-paper.pdf
-code: https://github.com/yourusername/transformer-research
+title: "Machine Learning Nanodegree"
+date: 2024-11-01
+issuer: Udemy
+thumbnail: "assets/images/certificates/Machine-Learning-Nanodegree.jpg"
+pdf: "/assets/pdfs/certificates/Machine-Learning-Nanodegree.pdf"
+url: "ude.my/UC-46bc4411-c79a-404a-893d-13af15211869"
+categories:
+    - Machine Learning
+    - Scikit-Learn
+    - Computer Vision
+    - Pandas
+    - TensorFlow
+    - NumPy
+    - Dimensionality Reduction
+    - Python
 ---
 
-## Abstract
-Brief summary of your research...
-
-## Key Contributions
-- Novel architecture modification
-- Benchmark results
-- Theoretical insights
-
-[Download PDF](/assets/pdfs/transformer-paper.pdf) | [View Code](https://github.com/yourusername/transformer-research)
+Optional description or achievement details...

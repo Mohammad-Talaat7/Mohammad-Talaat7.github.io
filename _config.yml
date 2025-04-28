@@ -61,6 +61,9 @@ defaults:
       type: "certificates"
     values:
       layout: "post"
+      pdf: "/assets/pdfs/certificates/default.pdf"
+      issuer: "Issuer Name"
+      thumbnail: "/assets/images/certificates/default.jpg"
 
 # Navbar page list
 nav:

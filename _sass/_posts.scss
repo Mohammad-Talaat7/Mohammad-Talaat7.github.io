@@ -74,6 +74,113 @@
   transform: translateY(-5px);
 }
 
+.certificates-section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.certificates-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificates-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  padding: 1rem 0;
+  gap: 1.5rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.certificate-card {
+  scroll-snap-align: start;
+  flex: 0 0 300px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    
+    .certificate-info {
+      opacity: 1;
+    }
+  }
+}
+
+.certificate-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.certificate-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 32, 44, 0.9);
+  color: white;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #1abc9c;
+  }
+}
+
+.pdf-download {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #e63946;
+  font-size: 1.5rem;
+}
+
+.slider-nav {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #1abc9c;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+
+  &:hover {
+    background: rgba(26, 188, 156, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    flex: 0 0 250px;
+  }
+  
+  .slider-nav {
+    display: none;
+  }
+}
+
 /* Horizontal layout styles */
 .skills__container {
     display: flex;

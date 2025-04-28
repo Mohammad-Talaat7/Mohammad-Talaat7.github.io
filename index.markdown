@@ -19,12 +19,31 @@ subtitle: Mohammad Talaat
   </div>
 </section>
 
-## Certificates
-{% for cert in site.certificates limit:3 %}
-- [{{ cert.title }}]({{ cert.url }}) ({{ cert.venue }})
-{% endfor %}
-
-[View All Certificates](/archive)
+<section class="certificates-section">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certificates-slider">
+    <button class="slider-nav prev">‹</button>
+    <div class="certificates-container">
+      {% for cert in site.certificates %}
+        <div class="certificate-card">
+          <a href="{{ cert.url }}" class="certificate-link" target="_blank">
+            <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
+            <div class="certificate-info">
+              <h3>{{ cert.title }}</h3>
+              <p>{{ cert.issuer }}</p>
+              {% if cert.pdf %}
+                <a href="{{ cert.pdf }}" class="pdf-download" download>
+                  <i class="fas fa-file-pdf"></i>
+                </a>
+              {% endif %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <button class="slider-nav next">›</button>
+  </div>
+</section>
 
 ## About Me
 Brief introduction with research interests...
