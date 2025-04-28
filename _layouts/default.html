@@ -75,9 +75,10 @@
 
       <nav class="main-nav">
         {% for item in site.data.navigation %}
-          <a class="nav-item{% if page.url == item.url %} active{% endif %}"
-              href="{{ item.url | relative_url }}">
-              {{ item.name }}
+          {% assign clean_url = item.url | replace: '.html', '' %}
+          <a class="nav-item{% if page.url contains clean_url %} active{% endif %}" 
+             href="{{ item.url | relative_url }}">
+            {{ item.name }}
           </a>
         {% endfor %}
       </nav>
