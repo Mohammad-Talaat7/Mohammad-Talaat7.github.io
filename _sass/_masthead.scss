@@ -17,15 +17,12 @@
 
 // Target the navigation container
 .sidebar-nav {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
-  gap: 1.2rem; // Adjust this value for vertical spacing
-  padding-left: 0;
-  margin: 1.5rem 0;
-
-  // For horizontal nav (if you want it row-based)
-  flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.5rem;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
   
   &-item {
     font-size: 1.1rem;
@@ -36,11 +33,15 @@
 
 // If using list items
 .sidebar-nav-item {
-  margin: 0.8rem 0; // Vertical spacing
+  display: block !important;
+  opacity: 1 !important;
+  color: #ecf0f1 !important;
   padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 
-  color: #2c3e50 !important;
   &:hover {
-    color: #1abc9c !important;
+    background-color: #34495e;
+    transform: translateX(5px);
   }
 }

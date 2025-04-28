@@ -70,7 +70,16 @@
   <body>
     <!-- Particles Container -->
     <div id="particles-js"></div>
-    
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+          {% for item in site.data.navigation %}
+            <a class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}" 
+               href="{{ item.url | relative_url }}">
+               {{ item.name }}
+            </a>
+          {% endfor %}
+        </nav>
+    </div> 
     <div class="container content">
       <main>
         {{ content }}

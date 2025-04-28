@@ -14,10 +14,13 @@
 }
 
 .sidebar {
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.6);
+  background-color: #202020;
+  width: 100%;
   position: relative;
-  left: 0;
-  width: auto;
-  padding: 1rem;
+  display: block;
+  z-index: 100;
 }
 
 .container {
