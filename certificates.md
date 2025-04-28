@@ -4,7 +4,9 @@ title: My Certifications
 permalink: /certificates/
 ---
 
-<div class="certificates-filter">
+<button id="filter-toggle" class="filter-btn">Show Filters</button>
+
+<div class="certificates-filter hidden">
   <div class="filter-group">
     <label for="category-filter">Filter by Category:</label>
     <select id="category-filter" class="filter-select">
@@ -46,6 +48,10 @@ permalink: /certificates/
          data-tags="{{ cert.tags | join: ' ' | slugify }}"
          data-issuer="{{ cert.issuer | slugify }}">
       <!-- Your existing card content -->
+        <article class="certificate">
+            <h2><a href="{{ certificate.url }}">{{ certificate.title }}</a></h2>
+            {{ certificate.excerpt }}
+        </article>
     </div>
   {% endfor %}
 </div>
