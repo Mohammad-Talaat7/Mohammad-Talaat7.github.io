@@ -49,8 +49,8 @@ permalink: /certificates/
          data-issuer="{{ cert.issuer | slugify }}">
       <!-- Your existing card content -->
         <article class="certificate">
-            <h2><a href="{{ certificate.url }}">{{ certificate.title }}</a></h2>
-            {{ certificate.excerpt }}
+            <h2><a href="{{ cert.url }}">{{ cert.title }}</a></h2>
+            {{ cert.excerpt }}
         </article>
     </div>
   {% endfor %}
