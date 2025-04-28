@@ -17,8 +17,8 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1.5rem 0;
-  margin-bottom: 2rem;
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0,0,0,0.1);
   background: transparent;
   backdrop-filter: blur(10px);
@@ -27,19 +27,29 @@
   z-index: 1000;
 
   .nav-item {
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
+    color: #1a1a1a; // Darker, more readable color
+    font-size: 0.95rem; // Smaller font size
+    padding: 0.4rem 0.9rem; // Tighter padding
 
     &:hover {
-      color: #1abc9c;
+      color: #148f77;
       transform: translateY(-2px);
     }
 
     &.active {
-      border-bottom: 2px solid #1abc9c;
-      font-weight: 600;
+      color: #148f77;
+      border-bottom: 2px solid #148f77;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 0.5rem 0;
+    
+    .nav-item {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
     }
   }
 }
