@@ -1,6 +1,6 @@
 # Setup
 title: Mohammad Talaat
-description: Research portfolio showcasing machine learning projects and publications
+description: Research portfolio showcasing machine learning projects and certificates
 url: https://mohammad-talaat7.github.io/
 paginate: 1
 baseurl: ""
@@ -40,7 +40,7 @@ author:
 # Custom vars
 version: 3.0.0
 
-# Collections for projects and publications
+# Collections for projects and certificates
 collections:
   projects:
     output: true
@@ -61,3 +61,11 @@ defaults:
       type: "certificates"
     values:
       layout: "post"
+
+# Navbar page list
+nav:
+  - title: Blog
+    url: /archive
+
+  - title: About
+    url: /about

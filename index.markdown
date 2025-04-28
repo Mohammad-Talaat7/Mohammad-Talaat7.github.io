@@ -19,12 +19,12 @@ subtitle: Mohammad Talaat
   </div>
 </section>
 
-## Recent Publications
-{% for pub in site.publications limit:3 %}
-- [{{ pub.title }}]({{ pub.url }}) ({{ pub.venue }})
+## Certificates
+{% for cert in site.certificates limit:3 %}
+- [{{ cert.title }}]({{ cert.url }}) ({{ cert.venue }})
 {% endfor %}
 
-[View All Publications](/archive)
+[View All Certificates](/archive)
 
 ## About Me
 Brief introduction with research interests...
