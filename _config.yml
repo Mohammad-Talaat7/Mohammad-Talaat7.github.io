@@ -45,9 +45,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  publications:
+  certificates:
     output: true
-    permalink: /publications/:path/
+    permalink: /certificates/:path/
 
 # Defaults
 defaults:
@@ -58,14 +58,6 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "publications"
+      type: "certificates"
     values:
       layout: "post"
-
-# Navbar page list
-nav:
-  - title: Blog
-    url: /archive
-
-  - title: About
-    url: /about
