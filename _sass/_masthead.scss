@@ -3,32 +3,34 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
- display: none; 
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
+  margin-bottom: var(--spacer-3);
+  position: relative;
+  z-index: 2; // Higher than container
+  pointer-events: auto;
 }
 
 .masthead-title {
-  visibility: hidden;
-  height: 0;
+  display: none !important;
 }
 
 // Target the navigation container
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; // Adjust this value for vertical spacing
+  gap: 1.2rem; // Adjust this value for vertical spacing
   padding-left: 0;
   margin: 1.5rem 0;
 
   // For horizontal nav (if you want it row-based)
   flex-direction: row;
   gap: 2.5rem;
-
-  @media (min-width: 768px) {
-    gap: 2rem;
-  }
   
-  @media (min-width: 1200px) {
-    gap: 2.5rem;
+  &-item {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem 0;
   }
 }
 
@@ -36,4 +38,9 @@
 .sidebar-nav-item {
   margin: 0.8rem 0; // Vertical spacing
   padding: 0.5rem 1rem;
+
+  color: #2c3e50 !important;
+  &:hover {
+    color: #1abc9c !important;
+  }
 }
