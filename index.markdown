@@ -30,7 +30,11 @@ subtitle: Mohammad Talaat
             <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
             <div class="certificate-info">
               <h3>{{ cert.title }}</h3>
-              <p>{{ cert.issuer }}</p>
+              <p>
+                <a href="{{ cert.issuer_url }}" class="issuer-link" target="_blank" rel="noopener">
+                  {{ cert.issuer }}
+                </a>
+              </p>
               {% if cert.pdf %}
                 <a href="{{ cert.pdf }}" class="pdf-download" download>
                   <i class="fas fa-file-pdf"></i>

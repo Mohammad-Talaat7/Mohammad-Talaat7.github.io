@@ -181,6 +181,53 @@
   }
 }
 
+.certificates-filter {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.5rem;
+  background: #2d3748;
+  color: white;
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificate-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.verify-btn {
+  background: #1abc9c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: darken(#1abc9c, 10%);
+  }
+}
+
 /* Horizontal layout styles */
 .skills__container {
     display: flex;
