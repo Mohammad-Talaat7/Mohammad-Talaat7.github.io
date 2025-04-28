@@ -27,20 +27,43 @@
   z-index: 1000;
 
   .nav-item {
-    color: #1a1a1a; // Darker, more readable color
+    color: #2c3e50; // Darker, more readable color
     font-size: 0.95rem; // Smaller font size
     padding: 0.4rem 0.9rem; // Tighter padding
 
     &:hover {
-      color: #148f77;
+      color: #3498db;
       transform: translateY(-2px);
     }
 
     &.active {
-      color: #148f77;
+      color: #3498db;
       border-bottom: 2px solid #148f77;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+
+    .nav-item {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+  }
+  @media (max-width: 480px) {
+    gap: 0.3rem;
+    
+    .nav-item {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
