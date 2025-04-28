@@ -239,6 +239,21 @@
   }
 }
 
+.certificate-meta {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.certificate-link {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
 .filter-btn {
   background: #1abc9c;
   color: white;

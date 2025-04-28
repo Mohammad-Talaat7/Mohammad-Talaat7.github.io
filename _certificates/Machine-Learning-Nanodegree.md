@@ -16,7 +16,6 @@ tags:
     - Python
 categories:
     - Machine Learning
-    - Udemy
 ---
 
 Optional description or achievement details...

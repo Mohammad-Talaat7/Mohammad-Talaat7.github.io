@@ -27,15 +27,19 @@ subtitle: Mohammad Talaat
       {% for cert in site.certificates %}
         <div class="certificate-card">
           <div class="certificate-content">
-            <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
-            <div class="certificate-info">
-              <h3>{{ cert.title }}</h3>
+              <a href="{{ cert.url }}" class="certificate-link">
+                <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
+                <div class="certificate-info">
+                  <h3>{{ cert.title }}</h3>
+                </div>
+              </a>   
               <div class="certificate-meta">
                 {% if cert.issuer_url %}
-                  <a href="{{ cert.issuer_url | absolute_url }}" 
+                  <a href="{{ cert.issuer_url }}" 
                      class="issuer-link" 
                      target="_blank" 
-                     rel="noopener noreferrer">
+                     rel="noopener noreferrer"
+                     onclick="event.stopPropagation()">
                     {{ cert.issuer }}
                   </a>
                 {% endif %}
