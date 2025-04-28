@@ -172,6 +172,17 @@
   font-size: 1.2rem;
   opacity: 1;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.3rem;
+  margin-left: auto; /* Push to right side */
+  
+  i {
+    line-height: 1; /* Remove icon's inherent line-height */
+    vertical-align: middle;
+  }
+
 
   &:hover {
     transform: scale(1.2);
