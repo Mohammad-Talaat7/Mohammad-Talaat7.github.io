@@ -1,5 +1,6 @@
 - name: "Home"
   url: "/"
+  exact: true
 - name: "Projects"
   url: "/projects/"
 - name: "Certificates"

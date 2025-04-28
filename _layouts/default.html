@@ -74,18 +74,21 @@
     <div class="container content">
 
       <nav class="main-nav">
+        {% assign base_dir = site.baseurl | default: '' %}
         {% for item in site.data.navigation %}
-          {% assign clean_url = item.url | replace: '.html', '' %}
-          <a class="nav-item{% if page.url contains clean_url %} active{% endif %}" 
-             href="{{ item.url | relative_url }}">
+          {% assign item_url = item.url | relative_url | replace: '//', '/' %}
+          {% assign page_url = page.url | replace: '//', '/' | replace: '/index.html', '/' %}
+          
+          <a class="nav-item{% if page_url == item_url %} active{% endif %}" 
+             href="{{ item_url }}">
             {{ item.name }}
           </a>
         {% endfor %}
       </nav>
 
-      <main>
-        {{ content }}
-      </main>
+          <main>
+            {{ content }}
+          </main>
 
       <footer class="footer">
         <small>
