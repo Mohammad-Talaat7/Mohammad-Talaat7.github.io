@@ -157,31 +157,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 1rem;
+  min-height: 40px;
   background: #1a202c;
 }
 
-.issuer-link {
-  color: #1abc9c !important;
-  text-decoration: none;
-  font-size: 0.9rem;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-
 .pdf-download {
-  position: absolute;
+  position: relative;
+  z-index: 3;
+  padding: 0.3rem;
   top: 1rem;
   right: 1rem;
   color: #e63946;
   font-size: 1.2rem;
-  transition: transform 0.3s ease;
+  opacity: 1;
+  transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    color: #ff1a1a
   }
 }
 
@@ -261,6 +255,11 @@
   color: #1abc9c !important;
   text-decoration: none;
   position: relative;
+  font-size: 0.85rem;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   z-index: 2; // Ensure link is above other elements
   
   &:hover {
