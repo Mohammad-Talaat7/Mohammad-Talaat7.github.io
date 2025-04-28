@@ -25,45 +25,34 @@ subtitle: Mohammad Talaat
     <button class="slider-nav prev" aria-label="Previous certificates">‹</button>
     <div class="certificates-container">
       {% for cert in site.certificates %}
+        <!-- Update Homepage Certificate Card Structure -->
         <div class="certificate-card">
-          <div class="certificate-content">
-              <a href="{{ cert.url }}" class="certificate-link">
-                <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
-                <div class="certificate-info">
-                  <h3>{{ cert.title }}</h3>
-                </div>
-              </a>   
-              <div class="certificate-meta">
-                {% if cert.issuer_url %}
-                  <a href="{{ cert.issuer_url }}" 
-                     class="issuer-link" 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     onclick="event.stopPropagation()">
-                    {{ cert.issuer }}
-                  </a>
-                {% endif %}
+          <a href="{{ cert.url }}" class="certificate-link">
+            <div class="certificate-media">
+              <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
+              <div class="certificate-hover-info">
+                <h3 class="certificate-title">{{ cert.title }}</h3>
               </div>
             </div>
-          </div>
-          <div class="certificate-actions">
-            {% if cert.credential_url %}
-              <a href="{{ cert.credential_url | absolute_url }}" 
-                 class="verify-btn" 
-                 target="_blank" 
-                 rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
+          </a> 
+          <div class="certificate-footer">
+            {% if cert.issuer_url %}
+            <a href="{{ cert.issuer_url }}" 
+               class="issuer-link" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              {{ cert.issuer }}
+            </a>
             {% endif %}
+            
             {% if cert.pdf %}
-              <a href="{{ cert.pdf | absolute_url }}" 
-                 class="pdf-download" 
-                 download>
-                <i class="fas fa-file-pdf"></i>
-              </a>
+            <a href="{{ cert.pdf }}" class="pdf-download" download>
+              <i class="fas fa-file-pdf"></i>
+            </a>
             {% endif %}
           </div>
-        </div> 
+        </div>
       {% endfor %}
     </div>
     <button class="slider-nav next" aria-label="Next certificates">›</button>
