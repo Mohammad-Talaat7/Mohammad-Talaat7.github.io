@@ -27,31 +27,39 @@ subtitle: Mohammad Talaat
       {% for cert in site.certificates %}
         <div class="certificate-card">
           <div class="certificate-content">
-            <img src="{{ cert.thumbnail }}" alt="{{ cert.title }} certificate thumbnail" class="certificate-thumbnail">
+            <img src="{{ cert.thumbnail }}" alt="{{ cert.title }}" class="certificate-thumbnail">
             <div class="certificate-info">
               <h3>{{ cert.title }}</h3>
               <div class="certificate-meta">
                 {% if cert.issuer_url %}
-                  <a href="{{ cert.issuer_url }}" class="issuer-link" target="_blank" rel="noopener noreferrer">
+                  <a href="{{ cert.issuer_url | absolute_url }}" 
+                     class="issuer-link" 
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     {{ cert.issuer }}
                   </a>
-                {% else %}
-                  <span class="issuer-name">{{ cert.issuer }}</span>
                 {% endif %}
               </div>
             </div>
           </div>
           <div class="certificate-actions">
+            {% if cert.credential_url %}
+              <a href="{{ cert.credential_url | absolute_url }}" 
+                 class="verify-btn" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            {% endif %}
             {% if cert.pdf %}
-              <a href="{{ cert.pdf }}" class="pdf-download" download aria-label="Download PDF">
+              <a href="{{ cert.pdf | absolute_url }}" 
+                 class="pdf-download" 
+                 download>
                 <i class="fas fa-file-pdf"></i>
               </a>
             {% endif %}
-            <a href="{{ cert.url }}" class="certificate-link" aria-label="View certificate details">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
           </div>
-        </div>
+        </div> 
       {% endfor %}
     </div>
     <button class="slider-nav next" aria-label="Next certificates">›</button>

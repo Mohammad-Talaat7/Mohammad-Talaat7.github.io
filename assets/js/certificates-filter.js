@@ -1,35 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize only if elements exist
   const filterToggle = document.getElementById('filter-toggle');
   const filterSection = document.querySelector('.certificates-filter');
   const certificates = document.querySelectorAll('.certificate-card');
 
   if (!filterToggle || !filterSection || !certificates.length) return;
 
+  // Initialize with hidden filters
   let filtersVisible = false;
-  
-  // Initial state - show all certificates
-  showAllCertificates();
-  
+  filterSection.classList.add('hidden');
+  filterToggle.textContent = 'Show Filters';
+
   // Toggle functionality
   filterToggle.addEventListener('click', () => {
     filtersVisible = !filtersVisible;
     filterSection.classList.toggle('hidden');
     filterToggle.textContent = filtersVisible ? 'Hide Filters' : 'Show Filters';
+    if (!filtersVisible) applyFilters(true); // Reset when hiding
   });
 
-  // Event delegation for dynamic filters
-  document.addEventListener('change', (e) => {
-    if (!filtersVisible) return;
-    if (e.target.matches('.filter-select')) {
-      applyFilters();
-    }
-  });
-
-  function applyFilters() {
-    const category = document.getElementById('category-filter').value;
-    const tag = document.getElementById('tag-filter').value;
-    const issuer = document.getElementById('issuer-filter').value;
+  // Filter application with reset option
+  function applyFilters(reset = false) {
+    const category = reset ? 'all' : document.getElementById('category-filter').value;
+    const tag = reset ? 'all' : document.getElementById('tag-filter').value;
+    const issuer = reset ? 'all' : document.getElementById('issuer-filter').value;
 
     certificates.forEach(card => {
       const showCard = (
@@ -42,9 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  function showAllCertificates() {
-    certificates.forEach(card => {
-      card.style.display = 'block';
-    });
-  }
+  // Event listeners
+  document.addEventListener('change', (e) => {
+    if (e.target.matches('.filter-select')) {
+      applyFilters();
+    }
+  });
+
+  // Initial show all
+  applyFilters(true);
 });

@@ -254,6 +254,28 @@
   }
 }
 
+/* Ensure proper URL handling */
+a[href^="http"]:not([href*="mohammad-talaat7.github.io"]) {
+  position: relative;
+  z-index: 100;
+}
+
+/* Fix filter initial state */
+.certificates-filter.hidden {
+  display: none !important;
+}
+
+/* Certificate card link positioning */
+.certificate-actions {
+  position: relative;
+  z-index: 2;
+}
+
+.certificate-content {
+  position: relative;
+  z-index: 1;
+}
+
 /* Horizontal layout styles */
 .skills__container {
     display: flex;
