@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Nanodegree"
-date: 2024-11-01
+date: 2024-01-11
 issuer: Udemy
 thumbnail: "assets/images/certificates/Machine-Learning-Nanodegree.jpg"
 pdf: "/assets/pdfs/certificates/Machine-Learning-Nanodegree.pdf"
