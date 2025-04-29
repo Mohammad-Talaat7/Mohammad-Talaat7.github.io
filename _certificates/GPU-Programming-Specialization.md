@@ -17,8 +17,6 @@ categories:
     - GPU
 ---
 
-## Description
-
 This GPU Programming Specialization from [*Johns Hopkins University*](https://www.jhu.edu/) provides comprehensive training in harnessing the power of Graphics Processing Units for general-purpose computing. The 4-course series covers:
 
 - **Introduction to Concurrent Programming with GPUs**

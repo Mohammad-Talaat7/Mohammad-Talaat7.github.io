@@ -20,8 +20,6 @@ categories:
     - NLP
 ---
 
-## Description
-
 This Natural Language Processing Specialization, offered by [*DeepLearning.AI*](https://www.deeplearning.ai/) and taught by NLP experts [**Younes Bensouda Mourri**](https://younesmourri.com) (Stanford) and [*Łukasz Kaiser*](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en) (Google Brain), provides comprehensive training in cutting-edge NLP techniques. The 4-course series covers:
 
 1. **Classification and Vector Spaces**: Logistic regression, naïve Bayes, word vectors, sentiment analysis, and machine translation

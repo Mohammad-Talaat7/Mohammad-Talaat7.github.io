@@ -18,8 +18,6 @@ categories:
   - Cloud Computing
 ---
 
-## Description
-
 The Huawei Certified AI Engineer (HCIA-AI) certification validates my professional capabilities in artificial intelligence development using Huawei's ecosystem. This comprehensive certification covers:
 
 - Fundamental AI concepts and Huawei's AI development framework

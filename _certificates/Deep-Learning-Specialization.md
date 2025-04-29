@@ -18,8 +18,6 @@ categories:
     - Artificial Intelligence
 ---
 
-## Description
-
 This comprehensive Deep Learning Specialization, offered by [*DeepLearning.AI*](https://www.deeplearning.ai) and taught by [**Andrew Ng**](https://en.wikipedia.org/wiki/Andrew_Ng), provides foundational knowledge of deep learning and prepares learners to build and train deep neural networks. The 5-course series covers:
 
 - **Neural Networks and Deep Learning**

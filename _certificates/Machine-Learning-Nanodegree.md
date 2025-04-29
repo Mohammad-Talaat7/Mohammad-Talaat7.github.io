@@ -20,8 +20,6 @@ categories:
     - Arabic Content
 ---
 
-## Description
-
 This comprehensive Machine Learning course in Arabic provided me with foundational to intermediate knowledge of machine learning concepts and practical implementation using Python. The course covers:
 
 - Fundamental machine learning concepts and algorithms
