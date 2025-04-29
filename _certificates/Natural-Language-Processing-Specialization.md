@@ -20,7 +20,7 @@ categories:
     - NLP
 ---
 
-This Natural Language Processing Specialization, offered by [*DeepLearning.AI*](https://www.deeplearning.ai/) and taught by NLP experts [**Younes Bensouda Mourri**](https://younesmourri.com) (Stanford) and [*Łukasz Kaiser*](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en) (Google Brain), provides comprehensive training in cutting-edge NLP techniques. The 4-course series covers:
+This Natural Language Processing Specialization, offered by [*DeepLearning.AI*](https://www.deeplearning.ai/) and taught by NLP experts [**Younes Bensouda Mourri**](https://younesmourri.com) (Stanford) and [**Łukasz Kaiser**](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en) (Google Brain), provides comprehensive training in cutting-edge NLP techniques. The 4-course series covers:
 
 1. **Classification and Vector Spaces**: Logistic regression, naïve Bayes, word vectors, sentiment analysis, and machine translation
 2. **Probabilistic Models**: Dynamic programming, hidden Markov models, word embeddings for autocorrection and POS tagging
